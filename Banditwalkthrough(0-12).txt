@@ -1,6 +1,6 @@
 //bandit walkthrough//
 level 0
-ssh bandit0@bandit.labs.overthewire.org
+ssh bandit0@bandit.labs.overthewire.org -p 2220
 username:bandit0
 password:bandit0
 level 0->level 1
