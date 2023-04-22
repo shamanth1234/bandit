@@ -56,3 +56,4 @@ then decompress using the respective commands
 .gz --->gzip
 .bzip2---->bzip2
 .tar---->tar
+The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
