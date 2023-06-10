@@ -1,0 +1,42 @@
+//bandit walkthrough//
+level 13->level 14
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+the password is fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+level 14->level 15 
+nc 127.0.0.1 30000
+the password jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+level 15->level 16
+ncat --ssl 127.0.0.1 30001
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+level 16->level 17
+nmap -p 3100-32000 -sV 127.0.0.1
+ncat --ssl 127.0.0.1 31790
+paste the current password & u ll get the ssh key
+chmod 600 bandit17.key
+level 17->level 18
+use that ssh key to connect to level 17
+diff passwords.new passwords.old
+the password is hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+level 18->level 19
+ssh -T bandit18@bandit.labs.overthewire.org -p 2220
+cat readme
+the password is awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+level 19->level 20
+./bandit20-do cat/etc/bandit_pass/bandit20
+the password is VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+level 20->level 21
+create 2 sessions one for nc daemon & other for ssh connection
+then in the 2nd session run nc -vlp 1234
+in 1st session run ./suconnect 1234
+the password is NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+level 21->level 22
+cat /etc/cron.d/cronjob_bandit22
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+the password is WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+level 22->level 23
+ls /etc/cron.d
+cat /usr/bin/cronjob_bandit23.sh
+myname=bandit23
+echo I am user $myname | md5sum | cut -d ' ' -f 1
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+the password is QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
